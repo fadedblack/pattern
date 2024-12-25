@@ -19,17 +19,17 @@ const replacAllElement = function (elements, element) {
 };
 
 const repeatStars = function (times) {
-  return '*'.repeat(times);
+  return "*".repeat(times);
 };
 
 const rectangle = function (rows, columns) {
   const starsInEachRow = replacAllElement(range(0, rows, 1), columns);
   const filledRectangle = starsInEachRow.map(repeatStars);
 
-  return console.log(filledRectangle.join('\n'));
+  return console.log(filledRectangle.join("\n"));
 };
 
-// //************************************TABLE*************************************
+//************************************TABLE*************************************
 // const DASH = '━';
 // const BAR = '┃';
 // const SPACE = ' ';
